@@ -1,0 +1,3 @@
+JWT_SECRET=YOUR_TOKEN
+MONGO_URI=mongodb+srv://LOGIN:PASSWORD@CLUSTER_NAME.ghs0b.mongodb.net/DB_NAME?retryWrites=true&w=majority
+NODE_ENV=development OR production

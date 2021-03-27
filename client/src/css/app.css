@@ -1,0 +1,183 @@
+.h2{
+  max-width: 100vw;
+}
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+a:hover{
+  text-decoration: none;
+} 
+/* best practice to place the footer on the bottom of the page */
+
+.app{ 
+  display: flex;
+  flex-direction: column;
+  min-height: 91vh;
+}
+.footerDiv {
+  font-size: 0.8rem;
+  justify-self: end;
+  margin-top: auto;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+textarea.form-control {
+  height: 12rem;
+}
+
+p{
+  margin: 0;
+}
+.btnDate {
+  display: flex;
+  justify-content: space-between;
+}
+.date{
+  font-size: 0.9rem;
+
+}
+.auth {
+  max-width: 30rem;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.blog{
+  max-width: 900px;
+}
+.blogBody{
+  text-indent: 2rem;
+}
+.btn-back {
+  margin-left: auto;
+}
+button.edit-btn:hover {
+  color: green!important;
+  text-decoration: underline
+}
+a.delete-btn:hover {
+  color: red!important;
+  text-decoration: underline
+}
+/* disigning the block with text of the blog */
+#blogPreview img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+/* styly for images in cards of BlogCard.js  */
+.blogPreview img{
+  max-width: 1.45rem;
+  
+}
+/* styly for h tags in cards of BlogCard.js  */
+.blogPreview  h1, .blogPreview h2,.blogPreview h3,
+.blogPreview h4,.blogPreview h5,.blogPreview h6 {
+  font-size: 1rem;
+
+}
+.btn:focus {
+  box-shadow: none!important;
+}
+
+/*  sytling for filter buttons */
+.filter .btn{
+  min-width: 7rem;
+}
+
+.all-btn {
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.liked-btn{
+   border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.my-btn {
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+ 
+}
+/* ============= */
+@media (max-width:990px) {
+  .navbar-nav .btn{
+    margin-bottom: 1rem;
+  }
+  .auth{
+    margin-top: 2rem; 
+  }
+}
+/* styling auth btns for screens lower than 433px */
+.blogCard {
+  box-shadow: 0 0 5px 1px #343A40;
+}
+
+.card-btn:hover {
+  cursor: default;
+}
+
+.progress {
+  height: 2px;
+  width: 7.75rem; 
+  margin: 0;
+  
+}
+
+progress::-webkit-progress-value {
+  background-color: #007BFF;
+  border-radius: 7px;
+}
+progress::-webkit-progress-bar {
+  background-color: #ccc;
+  border-radius: 7px;
+}
+
+@media (max-width:433px) {
+  .filter{
+    width: 100%;
+  }
+  .filter .d-flex{
+    justify-content: center;
+  }
+  .filter .btn{
+    min-width: 5rem;
+    max-width: 100%;
+  }
+  
+  .loggingCta{
+    flex-direction: column;
+  }
+  .loggingCta .btn-primary{
+    margin-right: 0!important;
+  }
+  .loggingCta .d-flex{
+    margin: 0.5rem 0;
+    flex-direction: column;
+  }
+  h2.mb-0{
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width:990px) {
+  .navbar-nav .btn-outline-primary{
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container:not(nav){
+    max-width: 900px;
+  }
+  .auth{
+    max-width: 480px!important;
+  }
+}
+
+/* .react-toast-notifications__container{
+  top: 4.5rem;
+} */
